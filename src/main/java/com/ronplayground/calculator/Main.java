@@ -3,16 +3,23 @@ package com.ronplayground.calculator;
 public class Main {
 
     public static void main(String[] args) {
-	float floatVal = 1.0f;
-	double doubleVal = 4.0d;
-	byte byteVal = 7;
-	short shortVal = 7;
-	long longVal = 5;
+	double val1 = 50.0d;
+	double val2 = 25.0d;
+	double result;
+	char opCode = 'a';
 
-	short result1 = byteVal;
-	short result2 = (short)longVal;
-	long result3 = shortVal;
-
-        System.out.println("Success");
+	if(opCode == 'a')
+		result = val1 + val2;
+	else if(opCode == 'a')
+		result = val1 - val2;
+	else if(opCode == 'a')
+		result = val1 / val2;
+	else if(opCode == 'm')
+		result = val1 * val2;
+	else {
+		System.out.println("Error - invalid shit");
+		result = 0.0d;
+	}
+	    System.out.println(result);
     }
 }

@@ -1,13 +1,17 @@
 package com.ronplayground.calculator;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * Created by Ron Wieder on 24/12/2019
  */
 public class MathEquation {
-	public double leftVal;
-	public double rightVal;
-	public double result;
-	public char opCode;
+
+	@Setter @Getter private double leftVal;
+	@Setter @Getter private double rightVal;
+	@Getter private double result;
+	@Setter @Getter private char opCode;
 
 	public void execute(){
 		switch(opCode) {

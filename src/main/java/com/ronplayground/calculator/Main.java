@@ -15,7 +15,7 @@ public class Main {
     	for(String statement:statements){
     		helper.process(statement);
 		    System.out.println(helper);
-	    }
+	    };
 
 //	    MathEquation[] equations = new MathEquation[4];
 //	    equations[0] = new MathEquation('d', 100.0d, 50.0d);
